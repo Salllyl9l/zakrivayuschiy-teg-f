@@ -164,7 +164,8 @@
   mix-blend-mode: hard-light;
 }
 
-@supports (text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color)) { 
+@supports (text-stroke: 1px var(--background-color)) or 
+(-webkit-text-stroke: 1px var(--background-color)) { 
   .card__cover-label {
     text-shadow: none;
     text-stroke: 1px var(--background-color);
