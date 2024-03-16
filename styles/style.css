@@ -151,7 +151,7 @@
 .card__cover-label {
   position: absolute;
   inset-inline-end: 4%;
-  inset-block-start: 24px;
+  inset-block-start: 24px; 
   z-index: 1;
   opacity: 0.5;
   font-family: var(--accent-font-family);
