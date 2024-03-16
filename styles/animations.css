@@ -45,7 +45,7 @@
 
 .like-icon.is-liked .heart {
   transform-origin: center;
-  animation: like-icon-scale 0.3s 0.1s ease-in 2 alternate;
+  animation: like-icon-scale 0.3s 0.1s ease-in 1 alternate;
 }
 
 .like-icon .contour {
@@ -100,6 +100,6 @@
 
 .like-icon.is-liked .sparks {
   transform-origin: center;
-  animation: like-icon-sparks 0.3s 0.3s ease-in 2 alternate;
+  animation: like-icon-sparks 0.3s 0.3s ease-in 1 alternate;
 }
 

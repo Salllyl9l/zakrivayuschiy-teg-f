@@ -33,7 +33,7 @@
   align-items: center;
   gap: 25px;
   max-inline-size: var(--component-max-inline-size);
-  min-block-size: clamp(20.4375rem, 17.4808rem + 12.6154vw, 23rem);
+  min-block-size: var(--component-min-inline-size);
   margin: 100px auto;
   border: 2px solid var(--text-color);
   padding-block-end: 25px;
@@ -48,6 +48,14 @@
   flex-direction: column;
   align-items: inherit;
   gap: 20px;
+}
+
+.header__logo {
+  text-decoration: none;
+}
+
+.header__logo:focus {
+  outline: none;
 }
 
 .header__title {
@@ -142,8 +150,8 @@
 
 .card__cover-label {
   position: absolute;
-  inset-inline-end: 25px;
-  inset-block-start: 25px;
+  inset-inline-end: 4%;
+  inset-block-start: 24px;
   z-index: 1;
   opacity: 0.5;
   font-family: var(--accent-font-family);
@@ -156,9 +164,13 @@
   mix-blend-mode: hard-light;
 }
 
-@supports (-webkit-text-stroke: 1px var(--background-color)) {
+@supports   
+  (text-stroke: 1px var(--background-color)) or
+    (-webkit-text-stroke: 1px var(--background-color))
+ {
   .card__cover-label {
     text-shadow: none;
+    text-stroke: 1px var(--background-color);
     -webkit-text-stroke: 1px var(--background-color);
   }
 }
